@@ -1,0 +1,11 @@
+case,n,start,bfs_result,dfs_result,note
+negative_n,-5,0,0,0,Invalid size handled as empty graph
+zero_n,0,0,0,0,Boundary case n=0
+single_vertex,1,0,1,1,Boundary case n=1
+negative_start,5,-2,5,5,Negative start is normalized modulo n
+start_out_of_range,5,7,5,5,Out-of-range start is normalized modulo n
+very_large_start,5,1000000000,5,5,Very large start is normalized modulo n
+two_vertices,2,1,2,2,Repeated neighbors are filtered by visited state
+three_vertices,3,2,3,3,Small dense overlap still traverses all vertices
+float_n,10.5,0,10,10,Float n is supported via normalization to int
+float_start,10,3.7,10,10,Float start is supported via normalization to int
