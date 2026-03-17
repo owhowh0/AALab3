@@ -30,6 +30,31 @@ Generated assets:
 - `comparison_table.png`, `comparison_graph.png`
 - `edge_cases_table.png`
 
+## Manim Animations (Graph-Based)
+
+This workspace includes `graph_animations.py` with these scenes:
+
+- `GraphModelScene` (implicit graph model with neighbors `i +/- {1,2,3} mod n`)
+- `BFSTraversalScene` (queue-based BFS traversal animation)
+- `DFSTraversalScene` (stack-based DFS traversal animation)
+- `BFSvsDFSChartScene` (animated chart from `bfs_results.csv` and `dfs_results.csv`)
+
+Render a scene with the workspace virtual environment:
+
+```bash
+./.venv/bin/manim -pqh graph_animations.py GraphModelScene
+```
+
+Other examples:
+
+```bash
+./.venv/bin/manim -pqh graph_animations.py BFSTraversalScene
+./.venv/bin/manim -pqh graph_animations.py DFSTraversalScene
+./.venv/bin/manim -pqh graph_animations.py BFSvsDFSChartScene
+```
+
+Videos are generated under `media/videos/graph_animations/...`.
+
 ## Report
 
 After generating PNG assets, compile the report:
