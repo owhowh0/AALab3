@@ -1,0 +1,5 @@
+regime,algorithm,num_points,avg_loglog_slope,interpretation
+Sparse,Prim (adj list),11,1.07,O(E log V) ≈ O(V log V) when E ≈ V
+Sparse,Kruskal,11,0.94,O(E log E) ≈ O(V log V) when E ≈ V
+Dense,Prim (heap),11,2.17,O((E + V) log V) ≈ O(V² log V) when E ≈ V²
+Dense,Kruskal,11,1.54,O(E log E) ≈ O(V² log V) when E ≈ V²

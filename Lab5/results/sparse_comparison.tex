@@ -1,0 +1,23 @@
+\begin{table}[H]
+    \centering
+    \small
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    \textbf{n} & \textbf{m} & \textbf{Prim (ms)} & \textbf{Kruskal (ms)} & \textbf{Speedup} \\
+    \hline
+     10 &    21 &   0.052 &   0.069 &  1.32x \\
+     20 &    35 &   0.069 &   0.053 &  0.76x \\
+     30 &    57 &   0.105 &   0.068 &  0.65x \\
+     50 &    94 &   0.161 &   0.123 &  0.76x \\
+     75 &   165 &   0.271 &   0.214 &  0.79x \\
+    100 &   215 &   0.392 &   0.289 &  0.74x \\
+    150 &   290 &   0.617 &   0.404 &  0.65x \\
+    200 &   375 &   0.856 &   0.525 &  0.61x \\
+    300 &   637 &   1.551 &   0.960 &  0.62x \\
+    400 &   765 &   1.983 &   1.306 &  0.66x \\
+    500 &   990 &   2.673 &   1.629 &  0.61x \\
+    \hline
+    \end{tabular}
+    \caption{Sparse Graphs: Prim vs Kruskal Execution Time}
+    \label{tab:sparse_comparison}
+\end{table}
