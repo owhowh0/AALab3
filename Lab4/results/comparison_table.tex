@@ -1,0 +1,31 @@
+\begin{table}[H]
+\centering
+\caption{Dijkstra and Floyd-Warshall Comparison (sampled n values)}
+\small
+\begin{tabular}{llrrrrr}
+\toprule
+Algorithm & Density & n & m & Time (ms) & Memory (KiB) & Relax attempts\\
+\midrule
+Dijkstra & dense & 10 & 33 & 0.044 & 0.9 & 33.0\\
+Dijkstra & dense & 40 & 523 & 0.376 & 2.1 & 523.0\\
+Dijkstra & dense & 100 & 3185 & 2.308 & 4.5 & 3185.0\\
+Dijkstra & dense & 220 & 15775 & 12.147 & 9.2 & 15775.0\\
+Dijkstra & dense & 600 & 116805 & 172.244 & 24.2 & 116805.0\\
+Dijkstra & dense & 1000 & 324918 & 542.354 & 39.9 & 324918.0\\
+FloydWarshall & dense & 10 & 33 & 0.401 & 3.2 & 858.0\\
+FloydWarshall & dense & 40 & 523 & 29.465 & 46.3 & 62598.0\\
+FloydWarshall & dense & 100 & 3185 & 454.166 & 289.4 & 988993.0\\
+FloydWarshall & dense & 220 & 15775 & 5077.384 & 1414.4 & 10603772.0\\
+Dijkstra & sparse & 10 & 20 & 0.067 & 1.4 & 40.0\\
+Dijkstra & sparse & 40 & 80 & 0.130 & 4.0 & 160.0\\
+Dijkstra & sparse & 100 & 200 & 0.320 & 9.1 & 400.0\\
+Dijkstra & sparse & 220 & 440 & 0.780 & 18.5 & 880.0\\
+Dijkstra & sparse & 600 & 1200 & 2.601 & 48.4 & 2400.0\\
+Dijkstra & sparse & 1000 & 2000 & 4.930 & 81.2 & 4000.0\\
+FloydWarshall & sparse & 10 & 20 & 0.416 & 3.6 & 870.0\\
+FloydWarshall & sparse & 40 & 80 & 23.980 & 48.9 & 50354.0\\
+FloydWarshall & sparse & 100 & 200 & 332.959 & 308.0 & 722752.0\\
+FloydWarshall & sparse & 220 & 440 & 3784.606 & 1501.7 & 7940761.0\\
+\bottomrule
+\end{tabular}
+\end{table}
